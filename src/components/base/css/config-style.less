@@ -1,0 +1,88 @@
+// 整体配置
+	//浏览器重置样式与mint-ui起冲突
+	//@import url("./Normalize.css");
+	html{
+		font-size: 625%;
+		min-width: 320px;
+		body{
+			font-size: .16rem;
+			min-width: 320px;
+			background: @bodyBg;
+			//页头通用样式
+		    header{
+		      position: fixed;
+		      top: 0;
+		      left:0;
+		      width: 100%;
+		      height: .88rem;
+		      font-size: .36rem;
+		      background: @headerBg;
+		      color:@headerFont;
+		      z-index: 3000;
+		   }
+		}
+	}
+	html,html a{color:@bodyColor;text-decoration: none;}
+// 清除浮动
+	.clear{
+		&:after{
+			clear: both;
+			contant:"";
+			display: block;
+		}
+	}
+// TODO:整体配色
+
+	@bodyColor:#333;
+	@bodyBg:#f5f4f9;
+	// 页头
+		@headerBg:#2ca7d8;
+		@headerFont:#fff;
+	//隐藏菜单
+		@headerMenuBg:#fff;
+		@headerMenuIcon1:#6dba42;
+		@headerMenuIcon2:#ffa94c;
+	//首页选项卡标题
+		@homeTabTitle:#6dba42;
+
+	//我的
+		@meMenuBoxBg:#fff;
+		@meMenuBarBd:#e5e5e5;
+		@meMenuTit:#646464;
+		@meMenuGo:#ccc;
+		@meAtteDate:#999;
+		@scanCodeShadow:rgba(0,0,0,.5);
+		@scanCodeColor:#00b900;
+		@scanConfigBtnBg:#f08c34;
+
+	//讲堂
+		@lecMenuBoxBg:#fff;
+		@lecMenuBarBd:#e5e5e5;
+		@lecMenuTit:#1a1d1d;
+		@lecMenuText:#4c504f;
+		@lecDetailsDate:#999;
+		@lecDetailsP:#444;
+
+	//明细统计
+		@staMenuBoxBg:#fff;
+		@staMenuBarBd:#e5e5e5;
+		@staMenuCSpan:#666;
+		@staMenuRight:#f08c34;
+		@staMenuRightArrow:#cacaca;
+
+	//扫码购物(分类)
+		@claBlockBg:#fff;
+		@claBlockBtnF:#fff;
+		@claBlockBd:#e1e1e1;
+		@claTextColor:#f08c34;
+		@claTextNumBtn:#01af67;
+		@claText:#626368;
+		@claPrice:#ff6b3d;
+		@claPriceDel:#c1c1c1;
+		@claBuySuccTit:#646464;
+		@claBuySuccBtnBg:#f08c34;
+		@claBuySuccBtnFont:#fff;
+
+	//底部导航
+		@footBg:#fff;
+		@footBdt:#e1e1e1;
